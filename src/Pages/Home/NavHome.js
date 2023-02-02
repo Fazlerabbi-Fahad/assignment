@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const NavHome = () => {
     return (
-        <Navbar bg="dark" expand="lg" variant="dark">
+        <Navbar bg="white" expand="lg" variant="white">
             <Container>
                 <Navbar.Brand href="/home">Lead<span className='fw-bold'>ZEN</span></Navbar.Brand>
                 <div>
@@ -13,7 +13,7 @@ const NavHome = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="/home">Home</Nav.Link>
-                            <Nav.Link href="/home">About</Nav.Link>
+                            <Nav.Link href="/about">About</Nav.Link>
                             <Nav.Link href="/bookings">Bookings</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

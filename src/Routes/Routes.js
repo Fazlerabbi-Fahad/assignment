@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
-import Booking from "../Pages/Booking/Booking";
+import About from "../Pages/About/About";
 import Bookings from "../Pages/Bookings/Bookings";
 import Home from "../Pages/Home/Home";
 
@@ -18,13 +18,12 @@ const routes = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: '/bookings',
-                element: <Bookings></Bookings>
+                path: '/about',
+                element: <About></About>
             },
             {
-                path: '/bookings/:id',
-                loader: ({ params }) => fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`),
-                element: <Booking></Booking>
+                path: '/bookings',
+                element: <Bookings></Bookings>
             }
         ]
     }
